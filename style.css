@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #2C5364, #203A43, #0F2027);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 15px;
+  text-align: center;
+  width: 90%;
+  max-width: 350px;
+  opacity: 0;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(30px);
+  animation: fadeInUp 0.8s ease-out forwards;
+  
+}
+
+  @keyframes fadeInUp {
+       from {
+          opacity: 0;
+          transform: translateY(30px);
+            }
+       to {
+          opacity: 1;
+          transform: translateY(0);
+            }
+      }
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  padding: 2px;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease-in-out;
+  
+}
+
+.avatar:hover {
+ transform: scale(1.1);
+  
+}
+
+.name {
+  margin: 10px 0 5px;
+  font-size: 26px;
+  font-weight: 600;
+  color: #fff;
+  
+}
+
+.username {
+  color: #ccc;
+  font-size: 14px;
+  
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 15px 0;
+  
+  
+}
+
+.skills span {
+  background: #5c6b73;
+  color: #ccc;
+  padding: 5px 10px;
+  margin: 5px;
+  border-radius: 10px;
+  font-size: 12px;
+  transition: 0.3s;
+  
+}
+
+.skills span:hover {
+  background-color: #1db954;
+  transform: scale(1.1);
+  
+}
+
+.bio {
+  font-size: 14px;
+  color: #bbb;
+  margin: 10px 0;
+  line-height: 1.5;
+  
+}
+
+.social-links {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.link {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  transition: 0.3s;
+  
+}
+
+.social-links a:hover {
+  transform: scale(1.05);
+  opacity: 0.8;
+  background-color: #1db954;
+  
+}
+
+.github { background: gray;}
+.whatsapp { background: gray;}
+.instagram { background: gray;} 
+.tiktok { background: gray;}
